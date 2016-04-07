@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 import pylink as mod
 
@@ -16,10 +16,8 @@ def run():
           description=mod.__doc__,
           license='BSD',
           long_description=read('README.md'),
-          packages=find_packages(),
-          include_package_data=True,
+          py_modules=['pylink'],
           zip_safe=False,
-          scripts=['bin/luxmake.py'],
           classifiers=[
               'Development Status :: 4 - Beta',
               'Intended Audience :: Developers',
