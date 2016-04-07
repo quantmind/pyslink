@@ -1,6 +1,6 @@
 from setuptools import setup
 
-import pylink as mod
+import pyslink as mod
 
 
 def read(name):
@@ -10,13 +10,15 @@ def read(name):
 
 def run():
 
-    setup(name='pylink',
+    setup(name='pyslink',
           version=mod.__version__,
           author='Luca Sbardella',
+          author_email="luca@quantmind.com",
+          url="https://github.com/quantmind/pyslink",
           description=mod.__doc__,
           license='BSD',
-          long_description=read('README.md'),
-          py_modules=['pylink'],
+          long_description=read('README.rst'),
+          py_modules=['pyslink'],
           zip_safe=False,
           classifiers=[
               'Development Status :: 4 - Beta',
@@ -31,7 +33,7 @@ def run():
               'Topic :: Software Development :: Libraries :: Python Modules'],
           entry_points={
               'console_scripts': [
-                  "pylink = pylink:main"
+                  "pyslink = pyslink:main"
               ]
           })
 

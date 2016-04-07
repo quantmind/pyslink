@@ -1,11 +1,12 @@
 # pyslink
 
 Soft link a file/directory with python site-packages directory.
+Useful during development.
 
-Installation via pip:
-    
+Installation via pip::
+
     pip install pyslink
-    
-Link a package
+
+Soft link a package::
 
     pyslink path/to/main/module
