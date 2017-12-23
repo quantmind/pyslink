@@ -1,7 +1,7 @@
 pyslink
 ========
 
-|pyversions| |status| |downloads|
+|pyversions| |status|
 
 Soft link a file/directory with python site-packages directory.
 Useful during development.
