@@ -5,7 +5,7 @@ import subprocess
 from distutils.sysconfig import get_python_lib
 
 
-__version__ = '0.1.1'
+__version__ = '0.2.0'
 
 
 def sh(command, cwd=None):

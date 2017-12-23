@@ -21,7 +21,7 @@ def run():
           py_modules=['pyslink'],
           zip_safe=False,
           classifiers=[
-              'Development Status :: 4 - Beta',
+              'Development Status :: 5 - Production/Stable',
               'Intended Audience :: Developers',
               'License :: OSI Approved :: BSD License',
               'Operating System :: OS Independent',
@@ -29,6 +29,7 @@ def run():
               'Programming Language :: Python :: 3',
               'Programming Language :: Python :: 3.4',
               'Programming Language :: Python :: 3.5',
+              'Programming Language :: Python :: 3.6',
               'Topic :: Utilities',
               'Topic :: Software Development :: Libraries :: Python Modules'],
           entry_points={
