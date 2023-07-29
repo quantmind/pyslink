@@ -4,22 +4,21 @@ import subprocess
 import sys
 from distutils.sysconfig import get_python_lib
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
 
-def sh(command, cwd=None):
+def sh(command: str) -> str:
     return subprocess.Popen(
         command,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         shell=True,
-        cwd=cwd,
         universal_newlines=True,
     ).communicate()[0]
 
 
-def main(argv=None):
-    argv = sys.argv if argv is None else argv
+def main() -> int:
+    argv = sys.argv
     if len(argv) > 1 and len(argv) < 3:
         path = argv[1]
     else:
