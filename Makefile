@@ -4,7 +4,8 @@ help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 install: 		## install packages in virtualenv
-	@pip install -r requirements-dev.txt
+	@pip install -U pip poetry
+	@poetry install
 
 lint: 			## run linters
 	poetry run ./lint
@@ -12,6 +13,5 @@ lint: 			## run linters
 version:		## display software version
 	@python -c "import pyslink; print(pyslink.__version__)"
 
-release-pypi:		## release to pypi and github tag
-	python setup.py sdist
-	twine upload dist/* --username lsbardel --password $(PYPI_PASSWORD)
+publish:		## release to pypi
+	@poetry publish --build -u lsbardel -p $(PYPI_PASSWORD)

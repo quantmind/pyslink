@@ -1,21 +1,19 @@
-pyslink
-========
+# pyslink
 
-|pyversions| |status|
+[![PyPI version](https://badge.fury.io/py/pyslink.svg)](https://badge.fury.io/py/pyslink)
+[![Python versions](https://img.shields.io/pypi/pyversions/pyslink.svg)](https://pypi.org/project/pyslink)
+[![release](https://github.com/quantmind/pyslink/actions/workflows/release.yml/badge.svg)](https://github.com/quantmind/pyslink/actions/workflows/release.yml)
+[![Downloads](https://img.shields.io/pypi/dd/pyslink.svg)](https://pypi.org/project/pyslink/)
+
 
 Soft link a file/directory with python site-packages directory.
 Useful during development.
 
-Installation via pip::
-
-    pip install pyslink
-
-Soft link a package::
-
-    pyslink path/to/main/module
-
-
-.. |pyversions| image:: https://img.shields.io/pypi/pyversions/pyslink.svg
-  :target: https://pypi.python.org/pypi/pyslink
-.. |status| image:: https://img.shields.io/pypi/status/pyslink.svg
-  :target: https://pypi.python.org/pypi/pyslink
+Installation via pip:
+```bash
+pip install pyslink
+```
+Soft link a package:
+```bash
+pyslink path/to/main/module
+```
